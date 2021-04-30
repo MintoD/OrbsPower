@@ -1,14 +1,15 @@
-<div style="text-align: center">
-    <span style="font-size: 38px">OrbsPower v1.1</span><br/>
-    <span style="font-size: 20px">Lots of utilities from orbs.</span>
-</div>
-<div style="text-align: center">
-
-[![Code Grade](https://www.code-inspector.com/project/22110/score/svg)](https://www.code-inspector.com)
-![GitHub all releases](https://img.shields.io/github/downloads/MintoD/OrbsPower/total)
-![GitHub](https://img.shields.io/github/license/MintoD/OrbsPower)
-[![Discord](https://img.shields.io/discord/832970039607033857.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/6sDGCk2JuD)
-</div>
+<p align="center">
+    <img src="https://github.com/MintoD/OrbsPower/blob/main/assets/logo.jpg?raw=true" />
+    <b>Lots of utilities from orbs.</b>
+</p>
+<p align="center">
+    <a href="https://www.code-inspector.com">
+        <img src="https://www.code-inspector.com/project/22110/score/svg" />
+    </a>
+    <img src="https://img.shields.io/github/downloads/MintoD/OrbsPower/total" />
+    <img src="https://img.shields.io/github/license/MintoD/OrbsPower" />
+    <a href="https://discord.gg/6sDGCk2JuD"><img src="https://img.shields.io/discord/832970039607033857.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2"/></a>
+</p>
 
 # Installation
 - Download from <a href="https://github.com/MintoD/OrbsPower/releases">here</a>.
