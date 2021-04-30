@@ -21,11 +21,11 @@ Recipes.addShaped({id: moon_orb.getID(), count: 1, data: 0}, [
 Callback.addCallback('ItemUse', (coords, item, block) => {
     if(item.id == moon_orb.getID()) {
         for (let i = 0; i < 36; i++) {
-            if (Player.getInventorySlot(i).id == 371) {
+            if (Player.getInventorySlot(i).id == 289) {
                 if (Player.getInventorySlot(i).count > 1) {
                     Player.setInventorySlot(
                         i,
-                        371,
+                        289,
                         Player.getInventorySlot(i).count - 1,
                         0
                     );
