@@ -16,10 +16,7 @@
 	],
 	"include": [
 		"Orb.ts",
-		"orbs/Sun_Orb.ts",
-		"orbs/Sunny_Orb.ts",
-		"orbs/Moon_Orb.ts",
-		"orbs/Rainy_Orb.ts"
+		"orbs/Sunny_Orb.ts"
 	],
 	"files": [
 		"/home/toby/Publish/OrbsPower/toolchain/declarations/android.d.ts",

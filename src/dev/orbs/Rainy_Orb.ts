@@ -20,17 +20,17 @@ rainy_orb.createItem();
 Recipes.addShaped(
     { id: rainy_orb.getID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 834, 0]
+    ["x", 1, 0, "y", 452, 0]
 );
 
 Callback.addCallback('ItemUse', (coords, item, block) => {
     if(item.id == rainy_orb.getID()) {
         for (let i = 0; i < 36; i++) {
-            if (Player.getInventorySlot(i).id == 834) {
+            if (Player.getInventorySlot(i).id == 452) {
                 if (Player.getInventorySlot(i).count > 1) {
                     Player.setInventorySlot(
                         i,
-                        834,
+                        452,
                         Player.getInventorySlot(i).count - 1,
                         0
                     );

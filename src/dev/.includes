@@ -5,4 +5,4 @@
 
 **/*.js
 *.ts
-*/*.ts
+orbs/Sunny_Orb.ts
