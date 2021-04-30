@@ -9,6 +9,4 @@
 </p>
 
 # Installation
-- Download from <a href="https://github.com/MintoD/OrbsPower/releases">here</a>.
-- Unzip it.
-- Move it to horizon mod folder.
+- Download from <a href="https://icmods.mineprogramming.org/mod.php?id=734">here</a>.
