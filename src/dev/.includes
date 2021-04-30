@@ -1,0 +1,8 @@
+# use this to include all files (only for order-independent builds)
+# use !path/to/file to exclude files or directories from build
+
+# nocheck
+
+**/*.js
+*.ts
+*/*.ts
