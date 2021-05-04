@@ -8,5 +8,8 @@
     <a href="https://discord.gg/6sDGCk2JuD"><img src="https://img.shields.io/discord/832970039607033857.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2"/></a>
 </p>
 
+# Usage
+Read <a href="https://github.com/MintoD/OrbsPower/wiki">wiki</a>
+
 # Installation
 - Download from <a href="https://icmods.mineprogramming.org/mod.php?id=734">here</a>.
