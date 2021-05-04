@@ -12,4 +12,4 @@
 Read <a href="https://github.com/MintoD/OrbsPower/wiki">wiki</a>
 
 # Installation
-- Download from <a href="https://icmods.mineprogramming.org/mod.php?id=734">here</a>.
+Download from <a href="https://icmods.mineprogramming.org/mod.php?id=734">here</a>.
