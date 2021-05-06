@@ -39,8 +39,8 @@ Recipes.addShaped(
 Callback.addCallback('ItemUse', (coords, item, block) => {
     if(item.id == rainy_orb.getID()) {
         for (let i = 0; i < 36; i++) {
-            if (Player.getInventorySlot(i).id == 289) {
-                if (Player.getInventorySlot(i).count > 1) {
+            if (Player.getInventorySlot(i).id == 289 && Player.getInventorySlot(i).count > 1) {
+              
                     Player.setInventorySlot(
                         i,
                         289,
@@ -51,7 +51,7 @@ Callback.addCallback('ItemUse', (coords, item, block) => {
                     Game.tipMessage(
                         Native.Color.GREEN + "Success!"
                     );
-                }
+                
             }
         }
     }
