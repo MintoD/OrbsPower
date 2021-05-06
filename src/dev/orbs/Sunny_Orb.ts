@@ -36,23 +36,21 @@ Recipes.addShaped(
     ["x", 1, 0, "y", 87, 0]
 );
 
-Callback.addCallback('ItemUse', (coords, item, block) => {
-    if(item.id == sunny_orb.getID()) {
-        for (let i = 0; i < 36; i++) {
-            if (Player.getInventorySlot(i).id == 289) {
-                if (Player.getInventorySlot(i).count > 1) {
-                    Player.setInventorySlot(
-                        i,
-                        289,
-                        Player.getInventorySlot(i).count - 1,
-                        0
-                    );
-                    World.setWeather({ rain: 0, thunder: 0 });
-                    Game.tipMessage(
-                        Native.Color.GREEN + "Success!"
-                    );
-                }
-            }
+Callback.addCallback("ItemUse", (coords, item, block) => {
+    for (let i = 0; i < 36; i++) {
+        if (
+            item.id == sunny_orb.getID() &&
+            Player.getInventorySlot(i).id == 289 &&
+            Player.getInventorySlot(i).count > 1
+        ) {
+            Player.setInventorySlot(
+                i,
+                289,
+                Player.getInventorySlot(i).count - 1,
+                0
+            );
+            World.setWeather({ rain: 0, thunder: 0 });
+            Game.tipMessage(Native.Color.GREEN + "Success!");
         }
     }
 });
