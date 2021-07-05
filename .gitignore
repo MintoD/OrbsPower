@@ -3,10 +3,4 @@ output
 *.icmod
 
 # Toolchain
-toolchain/*.bat
-toolchain/adb
-toolchain/bin
-toolchain/classpath
-toolchain/python
-toolchain/stdincludes
-toolchain/build
+toolchain
