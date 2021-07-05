@@ -1,45 +1,36 @@
 /* 
-
    ____       _         _____                       
   / __ \     | |       |  __ \                      
  | |  | |_ __| |__  ___| |__) |____      _____ _ __ 
  | |  | | '__| '_ \/ __|  ___/ _ \ \ /\ / / _ \ '__|
  | |__| | |  | |_) \__ \ |  | (_) \ V  V /  __/ |   
-  \____/|_|  |_.__/|___/_|   \___/ \_/\_/ \___|_|   
-                                                    
-                                   Version: 1.1                 
+  \____/|_|  |_.__/|___/_|   \___/ \_/\_/ \___|_|                
 
  */
 
 class Orb {
-    stringID: string;
-    itemName: string;
-    itemTexture: Item.TextureData;
-    itemConfig: any;
+    public orbID: string;
+    public orbName: string;
+    public orbTexture: Item.TextureData;
+    public orbConfig: any;
 
-    constructor(
-        stringID: string,
-        itemName: string,
-        itemTexture: Item.TextureData,
-        itemConfig: any
-    ) {
-        this.stringID = stringID;
-        this.itemName = itemName;
-        this.itemTexture = itemTexture;
-        this.itemConfig = itemConfig;
+    constructor(orbID: string,orbName: string,orbTexture: Item.TextureData, orbConfig: any) {
+        this.orbID = orbID;
+        this.orbName = orbName;
+        this.orbTexture = orbTexture;
+        this.orbConfig = orbConfig;
     }
 
-    createItem(): void {
-        IDRegistry.genItemID(this.stringID);
-        Item.createItem(
-            this.stringID,
-            this.itemName,
-            this.itemTexture,
-            this.itemConfig
-        );
+    public create(): void {
+        Utils.registerID(this.orbID);
+        Utils.createItem(this.orbID, this.orbName, this.orbTexture, this.orbConfig);
     }
 
-    getID(): number {
-        return Item.getNumericId(this.stringID);
+    public addRecipe(item: ItemInstance, mask: string[], data: (string | number)[]): void {
+        Utils.setRecipe(item, mask, data);
+    }
+
+    public getOrbNumericID(): number {
+        return Item.getNumericId(this.orbID);
     }
 }
