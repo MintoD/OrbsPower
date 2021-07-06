@@ -34,6 +34,5 @@ moon_orb.addRecipe(
 Callback.addCallback("ItemUse", (coords, item, block) => {
     if (item.id == moon_orb.getOrbNumericID()) {
         World.setWorldTime(12542);
-        Game.tipMessage(Native.Color.GREEN + "Success!");
     }
 });

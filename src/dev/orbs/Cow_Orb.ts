@@ -8,31 +8,31 @@
 
  */
 
-enum SUN_ORB {
-    orbID = "op.sun_orb",
-    orbName = "Sun Orb",
+  enum COW_ORB {
+    orbID = "op.cow_orb",
+    orbName = "Cow Orb",
 }
 
-const sun_orb = new Orb(
-    SUN_ORB.orbID,
-    SUN_ORB.orbName,
+const cow_orb = new Orb(
+    COW_ORB.orbID,
+    COW_ORB.orbName,
     {
-        name: "sun_orb",
+        name: "cow_orb",
         data: 0,
     },
     { stack: 1 }
 );
 
-sun_orb.create();
+cow_orb.create();
 
-sun_orb.addRecipe(
-    { id: sun_orb.getOrbNumericID(), count: 1, data: 0 },
+cow_orb.addRecipe(
+    { id: cow_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 213, 0]
+    ["x", 1, 0, "y", 334, 0]
 );
 
 Callback.addCallback("ItemUse", (coords, item, block) => {
-    if (item.id == sun_orb.getOrbNumericID()) {
-        World.setWorldTime(9000);
+    if (item.id == cow_orb.getOrbNumericID()) {
+        Entity.clearEffects(Player.get());
     }
 });

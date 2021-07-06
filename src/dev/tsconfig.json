@@ -18,6 +18,7 @@
 		"Utils.ts",
 		"Orb.ts",
 		"orbs/Sunny_Orb.ts",
+		"orbs/Cow_Orb.ts",
 		"orbs/Rainy_Orb.ts",
 		"orbs/Moon_Orb.ts",
 		"orbs/Sun_Orb.ts"

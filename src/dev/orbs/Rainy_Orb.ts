@@ -34,6 +34,5 @@ rainy_orb.addRecipe(
 Callback.addCallback("ItemUse", (coords, item, block) => {
     if (item.id == rainy_orb.getOrbNumericID()) {
         World.setWeather({ rain: 10, thunder: 0 });
-        Game.tipMessage(Native.Color.GREEN + "Success!");
     }
 });

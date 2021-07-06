@@ -34,6 +34,5 @@ sunny_orb.addRecipe(
 Callback.addCallback("ItemUse", (coords, item, block) => {
     if (item.id == sunny_orb.getOrbNumericID()) {
         World.setWeather({ rain: 0, thunder: 0 });
-        Game.tipMessage(Native.Color.GREEN + "Success!");
     }
 });
