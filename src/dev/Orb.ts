@@ -27,7 +27,7 @@ class Orb {
     }
 
     public addRecipe(item: ItemInstance, mask: string[], data: (string | number)[]): void {
-        Utils.setRecipe(item, mask, data);
+        RecipesManager.addRecipe({item, mask, data});
     }
 
     public getOrbNumericID(): number {

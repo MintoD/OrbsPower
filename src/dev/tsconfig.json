@@ -15,8 +15,10 @@
 		"webpack"
 	],
 	"include": [
+		"RecipeManager.ts",
 		"Utils.ts",
 		"Orb.ts",
+		"api/RecipeViewer.ts",
 		"orbs/Sunny_Orb.ts",
 		"orbs/Cow_Orb.ts",
 		"orbs/Rainy_Orb.ts",
@@ -24,6 +26,7 @@
 		"orbs/Sun_Orb.ts"
 	],
 	"files": [
+		"/home/toby/Publish/OrbsPower/toolchain/declarations/RecipeViewer.d.ts",
 		"/home/toby/Publish/OrbsPower/toolchain/declarations/android-declarations.d.ts",
 		"/home/toby/Publish/OrbsPower/toolchain/declarations/core-engine.d.ts",
 		"/home/toby/Publish/OrbsPower/toolchain/declarations/android.d.ts"

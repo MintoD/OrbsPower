@@ -28,7 +28,7 @@ rainy_orb.create();
 rainy_orb.addRecipe(
     { id: rainy_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 213, 0]
+    ["x", 1, 0, "y", 19, 0]
 );
 
 Callback.addCallback("ItemUse", (coords, item, block) => {
