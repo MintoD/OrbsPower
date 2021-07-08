@@ -1,7 +1,7 @@
 const CREATIVE_GROUP = {
     name: "Orbs",
     displayedName: "Orbs",
-    ids: [sun_orb.getOrbNumericID(), sunny_orb.getOrbNumericID(), rainy_orb.getOrbNumericID(), moon_orb.getOrbNumericID(), cow_orb.getOrbNumericID()],
+    ids: [sun_orb.getOrbNumericID(), sunny_orb.getOrbNumericID(), rainy_orb.getOrbNumericID(), moon_orb.getOrbNumericID(), cow_orb.getOrbNumericID(), bat_orb.getOrbNumericID(), pufferfish_orb.getOrbNumericID()],
 };
 
 (() => {

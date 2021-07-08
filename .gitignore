@@ -4,3 +4,6 @@ output
 
 # Toolchain
 toolchain
+
+# Misc
+.vscode/
