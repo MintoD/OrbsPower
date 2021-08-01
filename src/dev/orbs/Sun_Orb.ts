@@ -8,6 +8,8 @@
 
  */
 
+/// <reference path="../events/PlayerUseEvent.ts" />
+
 enum SUN_ORB {
     orbID = "op.sun_orb",
     orbName = "Sun Orb",
@@ -28,10 +30,10 @@ sun_orb.create();
 sun_orb.addRecipe(
     { id: sun_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 213, 0]
+    ["x", 213, 0, "y", empty_orb.getOrbNumericID(), 0]
 );
 
-Callback.addCallback("ItemUse", (coords, item, block) => {
+EventListener.PlayerUseEvent((coords, item, block) => {
     if (item.id == sun_orb.getOrbNumericID()) {
         World.setWorldTime(9000);
     }

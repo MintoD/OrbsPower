@@ -8,6 +8,8 @@
 
  */
 
+/// <reference path="./Recipe.ts"
+
 class Orb {
     public orbID: string;
     public orbName: string;
@@ -27,7 +29,7 @@ class Orb {
     }
 
     public addRecipe(item: ItemInstance, mask: string[], data: (string | number)[]): void {
-        RecipesManager.addRecipe({item, mask, data});
+        Manager.RecipesManager.addRecipe({item, mask, data});
     }
 
     public getOrbNumericID(): number {

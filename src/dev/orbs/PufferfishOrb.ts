@@ -8,6 +8,8 @@
 
  */
 
+/// <reference path="../events/PlayerUseEvent.ts" />
+
   enum PUFFERFISH_ORB {
     orbID = "op.pufferfish_orb",
     orbName = "Pufferfish Orb",
@@ -28,10 +30,10 @@ pufferfish_orb.create();
 pufferfish_orb.addRecipe(
     { id: pufferfish_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 462, 0]
+    ["x", 409, 0, "y", empty_orb.getOrbNumericID(), 0]
 );
 
-Callback.addCallback("ItemUse", (coords, item, block) => {
+EventListener.PlayerUseEvent((coords, item, block) => {
     if (item.id == pufferfish_orb.getOrbNumericID()) {
         Entity.addEffect(Player.get(), 13, 1, 9600);
     }

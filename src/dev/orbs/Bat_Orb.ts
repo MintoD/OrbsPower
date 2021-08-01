@@ -8,7 +8,9 @@
 
  */
 
-  enum BAT_ORB {
+/// <reference path="../events/PlayerUseEvent.ts" />
+
+enum BAT_ORB {
     orbID = "op.bat_orb",
     orbName = "Bat Orb",
 }
@@ -28,10 +30,10 @@ bat_orb.create();
 bat_orb.addRecipe(
     { id: bat_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 348, 0]
+    ["x", 89, 0, "y", empty_orb.getOrbNumericID(), 0]
 );
 
-Callback.addCallback("ItemUse", (coords, item, block) => {
+EventListener.PlayerUseEvent((coords, item, block) => {
     if (item.id == bat_orb.getOrbNumericID()) {
         Entity.addEffect(Player.get(), 16, 1, 9600);
     }

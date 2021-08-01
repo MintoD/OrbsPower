@@ -3,7 +3,7 @@
         "info": {
             "name": "OrbsPower",
             "author": "MintoD",
-            "version": "1.4",
+            "version": "1.5",
             "description": "Lots of utilities from orbs"
         },
         "api": "CoreEngine"

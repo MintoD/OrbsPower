@@ -8,14 +8,16 @@
 
  */
 
-interface Recipe {
-    item: ItemInstance;
-    mask: string[];
-    data: (string | number)[];
-}
+namespace Manager {
+    export interface Recipe {
+        item: ItemInstance;
+        mask: string[];
+        data: (string | number)[];
+    }
 
-class RecipesManager {
-    static addRecipe(recipe: Recipe) {
-        Recipes.addShaped(recipe.item, recipe.mask, recipe.data);
+    export class RecipesManager {
+        static addRecipe(recipe: Recipe) {
+            Recipes.addShaped(recipe.item, recipe.mask, recipe.data);
+        }
     }
 }

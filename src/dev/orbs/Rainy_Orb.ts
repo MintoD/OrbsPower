@@ -8,6 +8,8 @@
 
  */
 
+/// <reference path="../events/PlayerUseEvent.ts" />
+
 enum RAINY_ORB {
     orbID = "op.rainy_orb",
     orbName = "Rainy Orb",
@@ -28,10 +30,10 @@ rainy_orb.create();
 rainy_orb.addRecipe(
     { id: rainy_orb.getOrbNumericID(), count: 1, data: 0 },
     ["xxx", "xyx", "xxx"],
-    ["x", 1, 0, "y", 19, 0]
+    ["x", 19, 0, "y", empty_orb.getOrbNumericID(), 0]
 );
 
-Callback.addCallback("ItemUse", (coords, item, block) => {
+EventListener.PlayerUseEvent((coords, item, block) => {
     if (item.id == rainy_orb.getOrbNumericID()) {
         World.setWeather({ rain: 10, thunder: 0 });
     }

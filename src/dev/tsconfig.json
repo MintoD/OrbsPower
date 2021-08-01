@@ -15,16 +15,20 @@
 		"webpack"
 	],
 	"include": [
-		"RecipeManager.ts",
 		"Utils.ts",
+		"Block.ts",
+		"Recipe.ts",
 		"Orb.ts",
 		"orbs/Sunny_Orb.ts",
 		"orbs/Cow_Orb.ts",
 		"orbs/Rainy_Orb.ts",
+		"orbs/Empty_Orb.ts",
 		"orbs/Moon_Orb.ts",
 		"orbs/Bat_Orb.ts",
 		"orbs/PufferfishOrb.ts",
 		"orbs/Sun_Orb.ts",
+		"blocks/Nether_Star_Block.ts",
+		"events/PlayerUseEvent.ts",
 		"utils/creativeGroup.ts"
 	],
 	"files": [
