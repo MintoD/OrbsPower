@@ -9,6 +9,7 @@
  */
 
 /// <reference path="../events/PlayerUseEvent.ts" />
+/// <reference path="./Empty_Orb.ts" />
 
 enum BAT_ORB {
     orbID = "op.bat_orb",
